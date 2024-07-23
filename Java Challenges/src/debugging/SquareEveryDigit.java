@@ -1,3 +1,4 @@
+package debugging;
 
 public class SquareEveryDigit {
 
@@ -12,31 +13,30 @@ public class SquareEveryDigit {
 //		Note: The function accepts an integer and returns an integer.
 //
 //		Happy Coding!
-		
+
 		System.out.println(squareDigits1(9119));
 
 	}
-	
+
 	public static int squareDigits1(int n) {
-	    
-		   String numbersString = Integer.toString(n);
-		   char[] charList = numbersString.toCharArray();
-		   numbersString = "";
-		   
-		    for (char number : charList) {
-		      
-		      int numberInt = Character.getNumericValue(number);
-		      numberInt *= numberInt;
-		      numbersString += Integer.toString(numberInt);
-		      
-		      
-		    }
-		    
-		    System.out.println(numbersString);
-		    
-		    //int numberInt = Integer.parseInt(numbersString);
-		    
-		    return 0;
-		  }
+
+		String numbersString = Integer.toString(n);
+		char[] charList = numbersString.toCharArray();
+		numbersString = "";
+
+		for (char number : charList) {
+
+			int numberInt = Character.getNumericValue(number);
+			numberInt *= numberInt;
+			numbersString += Integer.toString(numberInt);
+
+		}
+
+		System.out.println(numbersString);
+
+		// int numberInt = Integer.parseInt(numbersString);
+
+		return 0;
+	}
 
 }
